@@ -1,0 +1,157 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f7fa;
+    color: #333;
+    line-height: 1.6;
+    text-align: center;
+  }
+  
+  h1 {
+    color: #45a049;
+    margin-top: 20px;
+    
+  }
+  
+  h2, h3 {
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  /* Input Fields and Buttons */
+  input[type="number"], input[type="text"], select {
+    width: 80%;
+    max-width: 300px;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  button {
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  button:active {
+    transform: scale(0.98);
+  }
+  
+  /* Form Container */
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  form {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    width: 90%;
+    max-width: 400px;
+  }
+  
+  /* Expense List */
+  #expenseList {
+    list-style: none;
+    padding: 0;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 400px;
+  }
+  
+  #expenseList li {
+    background: #fff;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  #expenseList button {
+    background-color: #e53935;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #expenseList button:hover {
+    background-color: #d32f2f;
+  }
+  
+  /* Monthly Income Display */
+  #incomeDisplay, #incomeUsage {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  
+  /* Status */
+  .status {
+    margin-top: 10px;
+  }
+  
+  .status p {
+    font-size: 20px;
+    font-weight: bold;
+    color: #4caf50;
+  }
+  
+  .status p.BAD {
+    color: #e53935;
+  }
+  
+  .status p.FAIR {
+    color: #ff9800;
+  }
+  
+  /* Chart Container */
+  canvas {
+    margin: 20px auto;
+    max-width: 500px;
+    width: 90%;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    input[type="number"], input[type="text"], select {
+      width: 100%;
+    }
+  
+    button {
+      width: 100%;
+    }
+  }
+  
+#expenseChart{
+    
+        max-width: 400px;
+        max-height: 400px;
+        width: 100%;
+        height: auto;
+      
+}

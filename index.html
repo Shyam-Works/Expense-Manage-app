@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Expense Manager with Income Tracking</title>
+  <link rel="stylesheet" href="index.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <h1>Expense Manager</h1>
+
+  <!-- Monthly Income Input -->
+  <h3>Enter Your Monthly Estimated Income</h3>
+  <input type="number" id="income" placeholder="Enter your income in $" required>
+  <button onclick="setIncome()">Set Income</button>
+  <p id="incomeDisplay">Monthly Income: $0</p>
+  <p id="incomeUsage">You have used: 0% of your income</p>
+  
+  <div class="status">
+    <p id="status"></p>
+  </div>
+    
+  <form id="expenseForm">
+    <h3>Add Expense</h3>
+    <div class="container">
+      <input type="text" id="name" placeholder="Expense Name" required>
+      <input type="number" id="amount" placeholder="Amount" required>
+      <select id="category" required>
+        <option value="" disabled selected>Select Category</option>
+        <option value="Grocery">🛍️Grocery</option>
+        <option value="Food">🍟Food</option>
+        <option value="Rent">🏠Rent</option>
+        <option value="Shopping">🛍️Shopping</option>
+        <option value="Transportation">🚇Transportation</option>
+        <option value="Internet">🛜Internet</option>
+        <option value="Other">❓Other</option>
+      </select>
+      
+      <button type="submit">Add Expense</button>
+    </div>
+  </form>
+
+  <!-- Expense List -->
+  <h2>Expenses</h2>
+  <ul id="expenseList"></ul>
+
+  <!-- Chart Container -->
+  <h2>Expense Breakdown by Category</h2>
+  <canvas id="expenseChart"></canvas>
+  <footer>
+    <p>© 2024 Shyam Patel. All rights reserved.</p>
+  </footer>
+  <script src="index.js">
+  </script>
+</body>
+</html>
